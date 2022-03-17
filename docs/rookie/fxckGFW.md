@@ -110,7 +110,12 @@ Clash是一种新的客户端，它支持V2Ray的订阅链接。可以用AUR安�
 yay -S clash-for-windows-bin
 ```
 ，但是在墙内安装速度其慢无比，如果没有耐心下载的话，可以在配置完其他代理后再布置，或使用镜像地址。
+
 和Qv2ray不同，Clash的默认代理端口是7890.
+- 订阅
+订阅是在
+
+打开Clash Dashboard,在General一栏勾选Start With Linux即可设置自启动
 
 
 ## 3. 代理的初步设置
