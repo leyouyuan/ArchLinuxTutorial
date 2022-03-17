@@ -106,14 +106,22 @@ sudo systemctl enable --now v2raya
 ## Clash
 
 Clash是一种新的客户端，它支持V2Ray的订阅链接。可以用AUR安装
+
+clash-for-windows是clash的一种图形化前端，它名字是”for-windows“，实际上是可以同时在Windows/Linux/MacOSX等平台使用的跨平台前端
+
+ArchLinux 用户可以用AUR安装Clash
 ```bash
 yay -S clash-for-windows-bin
 ```
-，但是在墙内安装速度其慢无比，如果没有耐心下载的话，可以在配置完其他代理后再布置，或使用镜像地址。
-
+，但是在墙内安装速度其慢无比(自测需要半个小时)，如果没有耐心下载的话，可以在配置完其他代理后再布置，或使用镜像地址。
 和Qv2ray不同，Clash的默认代理端口是7890.
 - 订阅
-订阅是在
+Clash的订阅是通过Profile完成的，点击Profile栏，顶部有一个文本框"Download from URL"，粘贴订阅地址，然后点击右边的按钮download，即可下载
+- 设置代理规则
+在Proxies栏中，选择选项Rule，是规则代理。
+
+选项Global是全局，而选项Direct是直连，可以以此更改代理模式。
+同时，在下面的界面可以通过简单操作来修改代理服务器
 
 打开Clash Dashboard,在General一栏勾选Start With Linux即可设置自启动
 
