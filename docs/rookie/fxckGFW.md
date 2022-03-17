@@ -103,6 +103,9 @@ sudo systemctl enable --now v2raya
 ```
 
 随后在菜单中搜索 v2raya，点击即可打开浏览器页面。在其中加入订阅即可使用。更多使用方法请看[官方文档](https://v2raya.org/)与[项目地址](https://github.com/v2rayA/v2rayA)
+## Clash
+
+Clash是一种新的
 
 ## 3. 代理的初步设置
 
