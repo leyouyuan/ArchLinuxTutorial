@@ -105,7 +105,13 @@ sudo systemctl enable --now v2raya
 随后在菜单中搜索 v2raya，点击即可打开浏览器页面。在其中加入订阅即可使用。更多使用方法请看[官方文档](https://v2raya.org/)与[项目地址](https://github.com/v2rayA/v2rayA)
 ## Clash
 
-Clash是一种新的
+Clash是一种新的客户端，它支持V2Ray的订阅链接。可以用AUR安装
+```bash
+yay -S clash-for-windows-bin
+```
+，但是在墙内安装速度其慢无比，如果没有耐心下载的话，可以在配置完其他代理后再布置，或使用镜像地址。
+和Qv2ray不同，Clash的默认代理端口是7890.
+
 
 ## 3. 代理的初步设置
 
@@ -120,6 +126,7 @@ Clash是一种新的
   可以通过 export 命令设置当前终端的代理方式。比如使用 tldr 或 github raw 等资源需要设置 https 代理。
 
   ```bash
+  #如果是clash，把端口换为7890，即127.0.0.1:7890
   export https_proxy=http://127.0.0.1:8889
   export http_proxy=http://127.0.0.1:8889
   export all_proxy=http://127.0.0.1:8889
